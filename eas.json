@@ -6,6 +6,9 @@
     "build": {
       "development": {
         "withoutCredentials": true,
+        "env": {
+            "ENV": "development"
+          },
         "android": {
           "buildType": "apk"
         },
