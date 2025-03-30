@@ -1,6 +1,6 @@
 {
   "expo": {
-    "owner": "OtoBotX",
+    "owner": "otobotx",
     "name": "expo-supabase-starter",
     "slug": "expo-supabase-starter",
     "version": "1.0.0",
@@ -38,6 +38,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "4713b2eb-81d6-4627-ab72-9d09f4a176ab"
+      }
     }
   }
 }

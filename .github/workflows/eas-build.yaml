@@ -85,12 +85,12 @@ jobs:
         run: npm install
 
       - name: 📲 Build Android Artifact
-        run: eas build --platform android --local --profile ${{ env.PROFILE }} --non-interactive  # Use PROFILE here
+        run: eas build --platform android --local --profile ${{ env.PROFILE }} --non-interactive
 
       - name: 🚀 Upload Android Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: android-otobotox-${{ github.sha }}
+          name: android-otobotx-${{ github.sha }}
           path: build-*.apk
 
   build-ios:
@@ -126,7 +126,7 @@ jobs:
       - name: 🚀 Upload iOS Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ios-otobotox-${{ github.sha }}
+          name: ios-otobotx-${{ github.sha }}
           path: build-*.tar.gz
 
   build-web:
