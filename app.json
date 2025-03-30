@@ -1,5 +1,6 @@
 {
   "expo": {
+    "owner": "OtoBotX",
     "name": "expo-supabase-starter",
     "slug": "expo-supabase-starter",
     "version": "1.0.0",
