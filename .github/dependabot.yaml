@@ -3,6 +3,7 @@
 
 version: 2
 updates:
+
   # npm dependencies
   - package-ecosystem: "npm" 
     directory: "/"
@@ -10,6 +11,12 @@ updates:
       interval: "weekly"
       time: "03:00"
       timezone: "UTC"
+    allow:
+      - dependency-name: "expo"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-patch", "version-update:semver-minor"]
+
   # GitHub Actions dependencies
   - package-ecosystem: "github-actions"
     directory: "/.github/workflows"
